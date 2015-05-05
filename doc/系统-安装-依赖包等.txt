@@ -1,0 +1,5 @@
+一。pylibmc memcache依赖包
+#安装方法见网址：http://sendapatch.se/projects/pylibmc/install.html
+#ubuntu下可以用sudo apt-get install python-pylibmc
+
+

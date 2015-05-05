@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN" xml:lang="zh-CN">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="keywords" content="二手,相机,照相机,摄影,摄影器材,跳蚤,单反,镜头"/>
+    <title>{{ city.name_cn }}订阅成功</title>
+    <meta name="description" content="{{ msg.title }}" />
+    <meta id="viewport" name="viewport" content="width=device-width; initial-scale=1.0; minimum-scale=1.0; maximum-scale=2.0"/>
+    <link href="/css/message.css" media="screen" rel="stylesheet" type="text/css" />
+    <script language=javascript>
+        function gotopage(secs,gotourl){
+            showmessage.innerHTML=secs; //显示当前还剩余的时间，秒数
+            if(--secs>0){  //如果还不到设定的时间，继续等待
+                setTimeout("gotopage("+secs+",'"+gotourl+"')",1000);
+            }
+            else{  // 到时间，跳转到指定页面
+                location.href=gotourl;
+            }
+        }
+    </script>
+</head>
+<body onload="gotopage(5,'/pe/{{ city.name_ab }}/');">
+{% block content %}
+    <center>
+        订阅成功<br/><br/>
+        <span id="showmessage">5</span>秒后自动返回
+    </center>
+{% endblock %}
+</body>
+</html>

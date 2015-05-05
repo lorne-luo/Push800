@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <!--
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/tab_index"
+        android:text="@string/text_login_login" />
+
+    <ImageButton
+        android:id="@+id/btn_index"
+        style="@style/Style_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/tab_index"
+        android:text="首页" />
+
+    <ImageButton
+        android:id="@+id/btn_prev"
+        style="@style/Style_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/tab_index"
+        android:text="前一个" />
+
+    <ImageButton
+        android:id="@+id/btn_next"
+        style="@style/Style_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/tab_index"
+        android:text="后一个" />
+
+    <ImageButton
+        android:id="@+id/btn_zoomin"
+        style="@style/Style_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/tab_index"
+        android:text="测试" />
+    -->
+	
+    <ImageButton
+        android:id="@+id/edit"
+        android:layout_width="80dip"
+        android:layout_height="wrap_content"
+        android:src="@drawable/tab_index"
+        android:text="测试" />
+    <TextView
+        android:id="@+id/menu2"
+        android:text="测试"
+        android:gravity="center_horizontal"
+        android:drawableTop="@drawable/tab_index"
+        android:layout_toRightOf="@id/edit"    
+        android:layout_width="80dip"
+        android:layout_height="wrap_content"    
+        >
+    </TextView>
+    <TextView
+        android:id="@+id/effect"
+        android:text="测试"
+        android:gravity="center_horizontal"
+        android:drawableTop="@drawable/tab_index"
+        android:layout_toRightOf="@id/menu2"
+        android:layout_width="80dip"
+        android:layout_height="wrap_content"        
+        >
+    </TextView>
+    <TextView
+        android:id="@+id/menu3"
+        android:text="测试"
+        android:gravity="center_horizontal"
+        android:drawableTop="@drawable/tab_index"
+        android:layout_toRightOf="@id/effect"
+        android:layout_width="80dip"
+        android:layout_height="wrap_content"        
+        >
+    </TextView>
+	
+</LinearLayout>

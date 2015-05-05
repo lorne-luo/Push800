@@ -1,0 +1,253 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN" xml:lang="zh-CN">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="keywords" content="二手,相机,照相机,摄影,摄影器材,跳蚤,单反,镜头"/>
+    <title>{{ city.name_cn }}二手摄影器材</title>
+    <meta name="description" content="{{ msg.title }}" />
+    <meta id="viewport" name="viewport" content="width=device-width; initial-scale=1.0; minimum-scale=1.0; maximum-scale=2.0"/>
+    <link href="/css/styles.css" media="screen" rel="stylesheet" type="text/css" />
+
+    <script src="/js/jquery-1.7.1.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        function chgAction(v){
+            if(v==1){//查询
+            }else if(v==2){//高级查询
+                search_form.action="./search/";
+                search_form.method="get";
+            }else if(v==3){//订阅
+                search_form.action="./subscribe/";
+                search_form.method="get";
+            }
+            search_form.submit();
+        }
+
+        function setPhoneNumber(phone_number,phone_ime){
+            document.getElementById("phone_number").value=phone_number;
+            document.getElementById("phone_ime").value=phone_ime;
+        }
+        var advanceSearch = {
+            show: function(){
+                //$('#formBoxH').fadeIn();
+                $('#formBoxH').show();
+            },
+            hide: function(){
+                $('#formBoxH').hide();
+                //$('#formBoxH').fadeOut();
+            },
+            submit: function(){
+                $('#advance_search').submit();
+            }
+        };
+    </script>
+</head>
+
+<body onload="window.javaobj.setPhoneNumber();">
+{% block content %}
+
+<!--
+<a id="register" href="push800://register">注册</a>
+<a id="login" href="push800://login">登陆</a>
+<a id="subscribe2" href="push800://subscribe">新信息提醒</a>
+-->
+
+<!-- 网站主体 -->
+<div id="ct">
+
+    <div class="path">
+        <a id="subscribe" href="/pe/{{ city.name_ab }}/">{{ city.name_cn }}首页</a>
+        <!-- 暂时取消 <a id="subscribe" href="#" onclick="chgAction(3);return false;">新信息提醒</a>-->
+        <a id="adv_search" href="#" onclick="advanceSearch.show();return false;">高级搜索</a>
+    </div>
+
+    <!-- info_box -->
+    <div class="info_box">
+        <div class="selection_area">
+        <form id="search_form" method="get" name="search_form"  action="/pe/{{ city.name_ab }}/" target="_self" autocomplete="on" onsubmit="">
+            <select width="60px" name="brand_id" id="brand_id">
+            <option value="0">品牌不限</option>
+                {% for brand in brand_list %}
+                    <option value="{{ brand.id }}" {% ifequal brand.id brand_id %} selected="1"{% endifequal %}>{{ brand.name_cn }}</option>
+                {% endfor %}
+            </select>
+            <input class="textinput" type="text" size="11" name="keyword" id="keyword" value="{{ keyword }}" onfocus="if (this.value=='请输入关键字') this.value='';" >
+            <input type="hidden" name="city_id" id="city_id" value="{{ city.id }}" >
+            <input type="hidden" name="phone_number" id="phone_number" value="{{ phone_number }}" >
+            <input type="hidden" name="phone_ime" id="phone_ime" value="{{ phone_ime }}" >
+            <a id="search" href="#" onclick="chgAction(1);return false;">搜索</a>
+        </form>
+        </div>
+
+<!-- 高级搜索 -->
+<div class="select_box" id="formBoxH" style="display:none">
+
+        <div class="topbar">
+            <strong>高级搜索</strong>
+
+        </div>
+
+        <div class="input_con">
+            <form class="filter_form" id="advance_search" method="GET" >
+            <ul>
+               <li>
+                   <span class="name">城市：</span>
+                   <span class="">
+                        <select  name="city_id" id="city_id" size="1">
+                        {% for c in city_list %}
+                            <option value="{{ c.id }}" {% ifequal c.id city.id %} selected="1"{% endifequal %}>{{ c.name_cn }}</option>
+                        {% endfor %}
+                        </select>
+                    </span>
+               </li>
+
+               <li>
+                   <span class="name">品牌：</span>
+                   <span class="">
+                        <select  name="brand_id" id="brand_id" size="1">
+                            <option value="0">不限</option>
+                            {% for brand in brand_list %}
+                                <option value="{{ brand.id }}" {% ifequal brand.id brand_id %} selected="1"{% endifequal %}>{{ brand.name_cn }}</option>
+                            {% endfor %}
+                        </select>
+                   </span>
+                </li>
+
+               <li>
+                   <span class="name">关键字：</span>
+                   <span class="input_item_w">
+                        <input class="long input_item" type="text" size="10" name="keyword" id="keyword" value="{{ keyword }}" onfocus="if (this.value=='请输入关键字') this.value='';" >
+                   </span>
+               </li>
+
+               <li>
+                   <span class="name">价格：</span>
+                   <span class="input_item_w">
+                       <input class="short input_item" type="text" size="3" name="min_price" id="min_price" value="{% ifnotequal min_price 0 %}{{ min_price }}{% endifnotequal %}">
+                       <span class="from-to">-</span>
+                       <input class="short input_item" type="text" size="3" name="max_price" id="max_price" value="{% ifnotequal max_price 0 %}{{ max_price }}{% endifnotequal %}">
+                   </span>
+                </li>
+
+                <li>
+                    <span class="name">成色：</span>
+                    <span class="">
+                        <select  name="quality" id="quality" size="1">
+                            <option value="0" >不限</option>
+                            <option value="98" >98新</option>
+                            <option value="95" >95新</option>
+                            <option value="90" >90新</option>
+                            <option value="80" >80新</option>
+                        </select>
+                    </span>
+                </li>
+
+    {% ifnotequal phone_number 0 %}
+        <input type="hidden" name="phone_number" id="phone_number" value="{{ phone_number }}">
+    {% endifnotequal %}
+    {% ifnotequal phone_ime '' %}
+        <input type="hidden" name="phone_ime" id="phone_ime" value="{{ phone_ime }}">
+    {% endifnotequal %}
+                </ul>
+                 <div class="btn_area">
+                     <button id="advance_submit" type="submit" class="btn" onclick="advanceSearch.submit();">搜索</button>
+                     <button id="advance_close" type="submit" class="btn" onclick="javascript:advanceSearch.hide();return false;">关闭</button>
+                 </div>
+            </form>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        $('#advance_search select').bind('change', function(e){
+            var li = e.target.parentNode;
+            var sl = e.target;
+            var val = $('strong.selVal', li);
+            if(val[0]){
+                val[0].innerHTML = sl.options[ sl.selectedIndex ].text;
+            }
+        });
+    </script>
+<!-- /End高级搜索 -->
+
+<!-- 列表循环 -->
+<ul class="info_list s_result">
+
+    {% for msg in msg_list.object_list %}
+    <li>
+        {% ifnotequal msg.picture 0 %}
+            <img class="pic_mark" src="/img/img.gif" alt="{{ msg.picture }}张图片" />
+        {% endifnotequal %}
+        <a class="title_link" href="{{ msg.url }}" >
+
+            <h2 class="title">{{ msg.title }}</h2>
+        </a>
+        <p>{{ msg.publish_time }}&nbsp;{{ msg.city }}</p>
+        <span class="date"></span>
+        <span class="price"><b class='pri'>{{ msg.price }}元</b></span>
+    </li>
+    {% endfor %}
+
+</ul>
+<!-- /End循环 -->
+
+<div id="page_range">
+    <form method="get" name="page_navigator"  action="/pe/{{ city.name_ab }}/">
+        <input type="hidden" name="keyword" id="keyword" value="{{ keyword }}">
+        <input type="hidden" name="city_id" id="city_id" value="{{ city.id }}">
+        <input type="hidden" name="brand_id" id="brand_id" value="{{ brand_id }}">
+        <input type="hidden" name="min_price" id="min_price" value="{{ min_price }}">
+        <input type="hidden" name="max_price" id="max_price" value="{{ max_price }}">
+        <input type="hidden" name="page" id="page" value="{{ msg_list.number }}">
+
+        {% ifnotequal phone_number 0 %}
+        <input type="hidden" name="phone_number" id="phone_number" value="{{ phone_number }}">
+        {% endifnotequal %}
+        {% ifnotequal phone_ime '' %}
+        <input type="hidden" name="phone_ime" id="phone_ime" value="{{ phone_ime }}">
+        {% endifnotequal %}
+
+        &lt;
+        {% if msg_list.has_previous %}
+            <a href="?page={{ msg_list.previous_page_number }}">上页</a>
+        {% endif %}
+
+        <span>
+            {% for p in page_range %}
+                {% ifequal p msg_list.number %}
+                    <span class="current">{{p}}</span>
+                {% else %}
+                    <a class="page_btn" href="#" title="第{{p}}页" onclick="set_page_navigator({{p}});return false;">{{p}}</a>
+                {% endifequal %}
+            {% endfor %}
+            </span>
+        {% if msg_list.has_next %}
+            <a href="#" onclick="set_page_navigator({{ msg_list.next_page_number }});return false;">下页</a>
+        {% endif %}
+        &gt;
+        <br/>
+        <span>[第{{ msg_list.number }}/{{ msg_list.paginator.num_pages }}页]</span>
+
+    </form>
+</div>
+<script type="text/javascript">
+  function set_page_navigator(p){
+      document.getElementById("page").value=p;
+      page_navigator.submit();
+  }
+</script>
+</div>
+</div>
+
+<!-- ft -->
+<footer id="ft">
+    <div class="login_info" id='login_info'></div>
+    <p class="ft_bar"></span><a href="/about.html">关于</a><span class="bar">|</span><a href="#" class="btn_gotop">回顶部</a></p>
+    <p class="copyright"><span><a href="http://push800.sinaapp.com">push800.sinaapp.com</a></span></p>
+</footer>
+<!-- //ft -->
+{% endblock %}
+<!-- linezing analysis-->
+<script type="text/javascript" src="http://js.tongji.linezing.com/2861914/tongji.js"></script><noscript><a href="http://www.linezing.com"><img src="http://img.tongji.linezing.com/2861914/tongji.gif"/></a></noscript>
+</body>
+</html>

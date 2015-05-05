@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Style_1">
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">#00EEFF</item>
+    </style>
+
+    <style name="Style_2">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#00EEFF</item>
+    </style>
+
+    <style name="Style_3">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#00EEFF</item>
+    </style>
+
+    <style name="DavidStyleText2">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#FF7F7C</item>
+        <item name="android:fromAlpha">0.0</item>
+        <item name="android:toAlpha">0.0</item>
+    </style>
+
+    <style name="menuTextStyle" parent="@android:style/TextAppearance.Small">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textColor">@color/menu_text_color</item>
+    </style>
+
+    <style name="menushow">
+        <item name="android:windowEnterAnimation">@anim/menu_in</item>
+        <item name="android:windowExitAnimation">@anim/menu_out</item>
+    </style>
+
+    <style name="Theme.CustomDialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:paddingBottom">1dip</item>
+        <item name="android:paddingLeft">0dip</item>
+        <item name="android:paddingRight">0dip</item>
+        <item name="android:paddingTop">3dip</item>
+    </style>
+	<style name="menu">
+        <item name="android:textSize">12.0dip</item>
+        <item name="android:textColor">@drawable/vpi_tab_textselector</item>
+        <item name="android:gravity">top|center</item>
+        <item name="android:drawablePadding">0.0dip</item>
+    </style>
+    
+	<style name="topbar">
+        <item name="android:textSize">20.0dip</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+    <style name="topbar_button">
+        <item name="android:textSize">14.0dip</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/btn_topbar_selector</item>
+        <item name="android:paddingLeft">10.0dip</item>
+        <item name="android:paddingTop">5.0dip</item>
+        <item name="android:paddingRight">10.0dip</item>
+        <item name="android:paddingBottom">5.0dip</item>
+        <item name="android:drawablePadding">3.0dip</item>
+    </style>
+	    
+    <style name="progress_bar_style" parent="@android:style/Widget.ProgressBar">
+        <item name="android:indeterminateDrawable">@drawable/progress_bar</item>
+    </style>
+    <style name="progress_bar_style_small" parent="@android:style/Widget.ProgressBar.Small">
+        <item name="android:indeterminateDrawable">@drawable/progress_bar</item>
+    </style>
+    <style name="default_notice">
+        <item name="android:textSize">13.0dip</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+</resources>

@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:id="@+id/setting_linearlayout" >
+    
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        style="@style/Style_1"
+        android:text="@string/setting_welcom"/>
+
+    <!-- 推送时间段 -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"/>
+        
+	    <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:orientation="horizontal">
+	        <TextView
+	            android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"
+	        	style="@style/Style_2"
+	        	android:text="@string/setting_from"/>
+	        
+	        <Button
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:id="@+id/btn_time_from"
+	            android:text="8:00"/>
+	        
+	        <TextView
+	            android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"
+	        	style="@style/Style_2"
+	        	android:text="@string/setting_to"/>
+	        
+	        <Button
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:id="@+id/btn_time_to"
+	            android:text="21:00"/>
+	            
+	    </LinearLayout>
+	    
+	    <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"/>
+	    
+	</LinearLayout>
+ 
+    <!-- 推送方式 -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"/>
+        
+	    <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:layout_centerInParent="true"
+	        android:orientation="horizontal">
+	        
+	        <TextView
+	            android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"
+	        	style="@style/Style_2"
+	        	android:text="@string/setting_push_method"/>
+	        
+	        <Spinner
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:id="@+id/sp_push_method"/>"
+	            
+	    </LinearLayout>
+	    
+	    <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"/>
+	    
+	</LinearLayout>
+	
+        
+    <!-- 推送间隔 -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"/>
+        
+	    <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:gravity="center_vertical"
+	        android:orientation="horizontal">
+	        
+	        <TextView
+	            android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"
+	        	style="@style/Style_2"
+	        	android:text="@string/setting_poll_time"/>
+	        
+	        <Spinner
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:id="@+id/sp_poll_time"/>
+	            
+	    </LinearLayout>
+	    
+	    <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"/>
+	    
+	</LinearLayout>
+	
+   <!-- 空2行 -->
+    <TextView
+            android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+            android:text="@string/blank_line_2"
+            />
+    
+    <!-- 一个水平的LinearLayout,分4份，中间两份放注册和登录 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="4" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" 
+			android:orientation="horizontal" >
+        
+            <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3" />
+            
+            <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" 
+			android:orientation="horizontal" >
+            
+		        <Button
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_weight="1"
+		            android:id="@+id/btn_Default"
+		            android:text="@string/setting_default" />"
+		
+		        <Button
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_weight="1"
+		            android:id="@+id/btn_OK"
+		            android:text="@string/setting_OK" />
+		   	</LinearLayout>
+		   	
+	    </LinearLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="4" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <!-- 一个水平的LinearLayout,分3份，两边两份放返回和注册 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <Button
+                android:id="@+id/button_login_regist"
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:text="@string/text_regist_back" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <Button
+                android:id="@+id/button_login_login"
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:text="@string/text_login_login" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <TextView
+        style="@style/Style_1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/text_regist_welcome" />
+
+    <!-- 连续三个水平的LinearLayout,分别放注册邮箱、密码、确认密码 -->
+    <!-- 又追加了3个同样水平的LinerLayout -->
+    <!-- 用户邮箱 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        />
+    
+    <!-- 连续两个水平的LinearLayout,分别放用户名和密码 -->
+    
+    <!-- 用户名 -->
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+            android:layout_weight="4"
+            />
+        
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            
+            <TextView
+	            android:layout_width="fill_parent"
+	        	android:layout_height="wrap_content"
+	            android:layout_weight="3"
+	            style="@style/Style_2"
+	            android:text="@string/text_login_id"
+	            />
+            
+            <AutoCompleteTextView
+	            android:layout_width="fill_parent"
+	        	android:layout_height="wrap_content"
+	            android:layout_weight="1"
+	            android:id="@+id/et_login_id"
+	            android:hint="@string/text_login_id_hint"
+	            />
+        </LinearLayout>
+        
+        <TextView
+            android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+            android:layout_weight="4"
+            />
+    </LinearLayout>
+    
+        
+    <!-- 密码 -->
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+            android:layout_weight="4"
+            />
+        
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            
+            <TextView
+	            android:layout_width="fill_parent"
+	        	android:layout_height="wrap_content"
+	            android:layout_weight="3"
+	            style="@style/Style_2"
+	            android:text="@string/text_login_pw"
+	            />
+            
+            <EditText
+	            android:layout_width="fill_parent"
+	        	android:layout_height="wrap_content"
+	            android:layout_weight="1"
+	            android:id="@+id/et_login_pw"
+	            android:password="true"
+	            android:hint="@string/text_login_pw_hint"
+	            />
+        </LinearLayout>
+        
+        <TextView
+            android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+            android:layout_weight="4"
+            />
+    </LinearLayout>
+
+        
+    <!-- 记住密码 -->
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+            android:layout_weight="4"
+            />
+        
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            
+        <CheckBox
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	style="@style/Style_2"
+        	android:text="@string/text_login_remember"
+        	android:id="@+id/cb_login_remember"/>
+        
+        </LinearLayout>
+        
+        <TextView
+            android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+            android:layout_weight="4"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

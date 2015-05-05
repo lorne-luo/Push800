@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="city_list">
+	    <item>北京</item>
+	    <item>上海</item>
+	    <item>广州</item>
+	    <item>深圳</item>
+	    <item>天津</item>
+	</string-array>
+	<!-- 与上面名称顺序要严格对应 -->
+	<string-array name="city_shortname">
+	    <item>bj</item>
+	    <item>sh</item>
+	    <item>gz</item>
+	    <item>sz</item>
+	    <item>tj</item>
+	</string-array>
+	
+	<!-- 以下是城区信息 -->
+	<!-- 包含"不限"，共19个 -->
+	<string-array name="bj_list">
+	    <item>不限</item>
+	    <item>朝阳</item>
+	    <item>海淀</item>
+	    <item>东城</item>
+	    <item>西城</item>
+	    <item>崇文</item>
+	    <item>宣武</item>
+	    <item>丰台</item>
+	    <item>通州</item>
+	    <item>石景山</item>
+	    <item>房山</item>
+	    <item>昌平</item>
+	    <item>大兴</item>
+	    <item>顺义</item>
+	    <item>密云</item>
+	    <item>怀柔</item>
+	    <item>延庆</item>
+	    <item>平谷</item>
+	    <item>门头沟</item>
+	</string-array>
+	
+	<!-- 包含"不限"，共20个 -->
+	<string-array name="sh_list">
+		<item>不限</item>
+	    <item>黄浦</item>
+	    <item>卢湾</item>
+	    <item>静安</item>
+	    <item>徐汇</item>
+	    <item>浦东</item>
+	    <item>长宁</item>
+	    <item>虹口</item>
+	    <item>杨浦</item>
+	    <item>普陀</item>
+	    <item>闸北</item>
+	    <item>闵行</item>
+	    <item>宝山</item>
+	    <item>嘉定</item>
+	    <item>青浦</item>
+	    <item>奉贤</item>
+	    <item>南汇</item>
+	    <item>崇明</item>
+	    <item>金山</item>
+	    <item>松江</item>
+	</string-array>
+	
+	<!-- 包含"不限"，共11个 -->
+	<string-array name="gz_list">
+	    <item>不限</item>
+	    <item>天河</item>
+	    <item>海珠</item>
+	    <item>越秀</item>
+	    <item>白云</item>
+	    <item>荔湾</item>
+	    <item>番禺</item>
+	    <item>黄埔</item>
+	    <item>花都</item>
+	    <item>增城</item>
+	    <item>萝岗</item>
+	</string-array>
+	
+	<!-- 包含"不限"，共8个 -->
+	<string-array name="sz_list">
+	    <item>不限</item>
+	    <item>罗湖</item>
+	    <item>布吉</item>
+	    <item>福田</item>
+	    <item>南山</item>
+	    <item>盐田</item>
+	    <item>宝安</item>
+	    <item>龙岗</item>
+	</string-array>
+	
+	<!-- 包含"不限"，共12个 -->
+	<string-array name="tj_list">
+	    <item>不限</item>
+	    <item>南开</item>
+	    <item>河西</item>
+	    <item>河东</item>
+	    <item>和平</item>
+	    <item>河北</item>
+	    <item>红桥</item>
+	    <item>塘沽</item>
+	    <item>东丽</item>
+	    <item>西青</item>
+	    <item>北辰</item>
+	    <item>津南</item>
+	</string-array>
+    
+</resources>

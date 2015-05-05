@@ -1,0 +1,31 @@
+<mockup version="1.0" skin="sketch" measuredW="510" measuredH="556" mockupW="282" mockupH="510">
+  <controls>
+    <control controlID="0" controlTypeID="com.balsamiq.mockups::iPhone" x="228" y="46" w="-1" h="-1" measuredW="282" measuredH="510" zOrder="0" locked="false" isInGroup="-1"/>
+    <control controlID="1" controlTypeID="com.balsamiq.mockups::IconLabel" x="280" y="170" w="-1" h="-1" measuredW="73" measuredH="73" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Icon%20Name</text>
+      </controlProperties>
+    </control>
+    <control controlID="2" controlTypeID="com.balsamiq.mockups::IconLabel" x="392" y="167" w="-1" h="-1" measuredW="73" measuredH="73" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Icon%20Name</text>
+      </controlProperties>
+    </control>
+    <control controlID="3" controlTypeID="com.balsamiq.mockups::IconLabel" x="281" y="274" w="-1" h="-1" measuredW="73" measuredH="73" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Icon%20Name</text>
+      </controlProperties>
+    </control>
+    <control controlID="4" controlTypeID="com.balsamiq.mockups::IconLabel" x="396" y="271" w="-1" h="-1" measuredW="73" measuredH="73" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Icon%20Name</text>
+      </controlProperties>
+    </control>
+    <control controlID="6" controlTypeID="com.balsamiq.mockups::Label" x="337" y="415" w="134" h="34" measuredW="128" measuredH="25" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>10027008</color>
+        <text>Background%20%20ZZzz..</text>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>

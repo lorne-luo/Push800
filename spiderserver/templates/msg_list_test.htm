@@ -1,0 +1,608 @@
+﻿
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN" xml:lang="zh-CN">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="keywords" content="二手,相机,照相机,摄影,摄影器材,跳蚤,单反,镜头"/>
+    <title>北京二手摄影器材</title>
+    <meta name="description" content="" />
+    <meta id="viewport" name="viewport" content="width=device-width; initial-scale=1.0; minimum-scale=1.0; maximum-scale=2.0"/>
+    <link href="css/styles.css" media="screen" rel="stylesheet" type="text/css" />
+    <script src="js/jquery-1.7.1.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        function chgAction(v){
+            if(v==1){//查询
+            }else if(v==2){//高级查询
+                search_form.action="./search/";
+                search_form.method="get";
+            }else if(v==3){//订阅
+                search_form.action="./subscribe/";
+                search_form.method="get";
+            }
+            search_form.submit();
+        }
+
+        function setPhoneNumber(phone_number,phone_ime){
+            document.getElementById("phone_number").value=phone_number;
+            document.getElementById("phone_ime").value=phone_ime;
+        }
+        var advanceSearch = {
+            show: function(){
+                $('#formBoxH').fadeIn();
+                //$('#formBoxH').show();
+            },
+            hide: function(){
+                //$('#formBoxH').hide();
+                $('#formBoxH').fadeOut();
+            },
+            submit: function(){
+                $('#advance_search').submit();
+            }
+        };
+    </script>
+</head>
+
+<body onload="window.javaobj.setPhoneNumber();">
+
+
+<!--
+<a id="register" href="push800://register">注册</a>
+<a id="login" href="push800://login">登陆</a>
+<a id="subscribe2" href="push800://subscribe">新信息提醒</a>
+-->
+
+<!-- 网站主体 -->
+<div id="ct">
+
+    <div class="path">
+        <a id="subscribe" href="/pe/bj/">北京首页</a>
+        <!-- 暂时取消 <a id="subscribe" href="#" onclick="chgAction(3);return false;">新信息提醒</a>-->
+        <a id="adv_search" href="#" onclick="advanceSearch.show();return false;">高级搜索</a>
+    </div>
+
+    <!-- info_box -->
+    <div class="info_box">
+        <div class="selection_area">
+        <form id="search_form" method="get" name="search_form"  action="/pe/bj/" target="_self" autocomplete="on" onsubmit="">
+            <select width="60px" name="brand_id" id="brand_id">
+            <option value="0">品牌不限</option>
+                
+                    <option value="1" >佳能</option>
+                
+                    <option value="2" >尼康</option>
+                
+                    <option value="3" >索尼</option>
+                
+                    <option value="4" >宾得</option>
+                
+                    <option value="5" >富士</option>
+                
+                    <option value="6" >奥林巴斯</option>
+                
+                    <option value="7" >松下</option>
+                
+                    <option value="8" >理光</option>
+                
+                    <option value="9" >适马</option>
+                
+                    <option value="10" >腾龙</option>
+                
+                    <option value="11" >图丽</option>
+                
+                    <option value="12" >美能达</option>
+                
+                    <option value="13" >哈苏</option>
+                
+                    <option value="14" >蔡司</option>
+                
+                    <option value="15" >徕卡</option>
+                
+                    <option value="16" >柯达</option>
+                
+                    <option value="17" >禄来</option>
+                
+                    <option value="18" >卡西欧</option>
+                
+                    <option value="19" >康泰时</option>
+                
+                    <option value="20" >爱普生</option>
+                
+                    <option value="21" >惠普</option>
+                
+                    <option value="22" >玛米亚</option>
+                
+                    <option value="23" >柯尼卡</option>
+                
+                    <option value="24" >三洋</option>
+                
+                    <option value="25" >雅西卡</option>
+                
+                    <option value="26" >其他品牌</option>
+                
+                    <option value="27" >三脚架</option>
+                
+                    <option value="28" >摄影包</option>
+                
+                    <option value="29" >其它配件</option>
+                
+            </select>
+            <input class="textinput" type="text" size="11" name="keyword" id="keyword" value="请输入关键字" onfocus="if (this.value=='请输入关键字') this.value='';" >
+            <input type="hidden" name="city_id" id="city_id" value="1" >
+            <input type="hidden" name="phone_number" id="phone_number" value="0" >
+            <input type="hidden" name="phone_ime" id="phone_ime" value="" >
+            <a id="search" href="#" onclick="chgAction(1);return false;">搜索</a>
+        </form>
+        </div>
+
+<!-- 高级搜索 -->
+<div class="select_box" id="formBoxH" style="display:none">
+
+        <div class="topbar">
+            <strong>高级搜索</strong>
+            <a class="close-search" href="javascript:advanceSearch.hide();return false;">关闭</a>
+        </div>
+
+        <div class="input_con">
+            <form class="filter_form" id="advance_search" method="GET" onsubmit="return Mwuba.check_cmcs_form();">
+            <input type="hidden" name="patid" value="5">
+            <input type="hidden" name="oparas" value="">
+            <ul>
+
+               <li>
+                   <span class="name">城市：</span>
+                   <span class="">
+                        <select  name="city_id" id="city_id" size="1">
+                        
+                            <option value="1"  selected="1">北京</option>
+                        
+                            <option value="2" >上海</option>
+                        
+                            <option value="3" >广州</option>
+                        
+                            <option value="4" >深圳</option>
+                        
+                            <option value="5" >天津</option>
+                        
+                        </select>
+                    </span>
+               </li>
+
+               <li>
+                   <span class="name">品牌：</span>
+                   <span class="">
+                        <select  name="brand_id" id="brand_id" size="1">
+                            <option value="0">不限</option>
+                            
+                                <option value="1" >佳能</option>
+                            
+                                <option value="2" >尼康</option>
+                            
+                                <option value="3" >索尼</option>
+                            
+                                <option value="4" >宾得</option>
+                            
+                                <option value="5" >富士</option>
+                            
+                                <option value="6" >奥林巴斯</option>
+                            
+                                <option value="7" >松下</option>
+                            
+                                <option value="8" >理光</option>
+                            
+                                <option value="9" >适马</option>
+                            
+                                <option value="10" >腾龙</option>
+                            
+                                <option value="11" >图丽</option>
+                            
+                                <option value="12" >美能达</option>
+                            
+                                <option value="13" >哈苏</option>
+                            
+                                <option value="14" >蔡司</option>
+                            
+                                <option value="15" >徕卡</option>
+                            
+                                <option value="16" >柯达</option>
+                            
+                                <option value="17" >禄来</option>
+                            
+                                <option value="18" >卡西欧</option>
+                            
+                                <option value="19" >康泰时</option>
+                            
+                                <option value="20" >爱普生</option>
+                            
+                                <option value="21" >惠普</option>
+                            
+                                <option value="22" >玛米亚</option>
+                            
+                                <option value="23" >柯尼卡</option>
+                            
+                                <option value="24" >三洋</option>
+                            
+                                <option value="25" >雅西卡</option>
+                            
+                                <option value="26" >其他品牌</option>
+                            
+                                <option value="27" >三脚架</option>
+                            
+                                <option value="28" >摄影包</option>
+                            
+                                <option value="29" >其它配件</option>
+                            
+                        </select>
+                    </span>
+                </li>
+
+
+
+               <li>
+                   <span class="name">关键字：</span>
+                   <span class="input_item_w">
+                        <input class="long input_item" type="text" size="10" name="keyword" id="keyword" value="请输入关键字" onfocus="if (this.value=='请输入关键字') this.value='';" >
+                    </span>
+               </li>
+
+               <li>
+                   <span class="name">价格：</span>
+                   <span class="input_item_w">
+                       <input class="short input_item" type="text" size="3" name="min_price" id="min_price" value="">
+                       <span class="from-to"> - </span>
+                       <input class="short input_item" type="text" size="3" name="max_price" id="max_price" value="">
+                   </span>
+                </li>
+
+                <li>
+
+                    <span class="name">成色：</span>
+                    <span class="">
+                        <select  name="quality" id="quality" size="1">
+                            <option value="0" >不限</option>
+                            <option value="98" >98新</option>
+                            <option value="95" >95新</option>
+                            <option value="90" >90新</option>
+                            <option value="80" >80新</option>
+                        </select>
+                    </span>
+
+                </li>
+
+    
+    
+                </ul>
+                 <div class="btn_area"><button id="advance_submit" type="submit" class="btn" onclick="advanceSearch.submit();">搜索</button></div>
+            </form>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        $('#advance_search select').bind('change', function(e){
+            var li = e.target.parentNode;
+            var sl = e.target;
+            var val = $('strong.selVal', li);
+            if(val[0]){
+                val[0].innerHTML = sl.options[ sl.selectedIndex ].text;
+            }
+        });
+    </script>
+<!-- /End高级搜索 -->
+
+<!-- 列表循环 -->
+<ul class="info_list s_result">
+
+    
+    <li>
+        
+            <img class="pic_mark" src="img/img.gif" alt="1张图片" />
+        
+        <a class="title_link" href="/pe/msg/1/201469/" >
+
+            <h2 class="title">100新 徕卡 Leica 徕卡21 finder 取景器 21取景器 21 黑银色</h2>
+        </a>
+        <p>05-11 13:22&nbsp;北京</p>
+        <span class="date"></span>
+        <span class="price"><b class='pri'>100新/5000元</b></span>
+    </li>
+    
+    <li>
+        
+            <img class="pic_mark" src="img/img.gif" alt="8张图片" />
+        
+        <a class="title_link" href="/pe/msg/1/201466/" >
+
+            <h2 class="title">索尼 dsc-W80数码相机</h2>
+        </a>
+        <p>05-11 13:21&nbsp;北京-昌平</p>
+        <span class="date"></span>
+        <span class="price"><b class='pri'>550元</b></span>
+    </li>
+    
+    <li>
+        
+        <a class="title_link" href="/pe/msg/1/201465/" >
+
+            <h2 class="title">九九成新SONY T700黑色</h2>
+        </a>
+        <p>05-11 13:21&nbsp;北京-西城百万庄</p>
+        <span class="date"></span>
+        <span class="price"><b class='pri'>99新/900元</b></span>
+    </li>
+    
+    <li>
+        
+        <a class="title_link" href="/pe/msg/1/201455/" >
+
+            <h2 class="title">尼康AF-S 17-55/2.8G DX镜头</h2>
+        </a>
+        <p>05-11 13:20&nbsp;北京</p>
+        <span class="date"></span>
+        <span class="price"><b class='pri'>97新/6666元</b></span>
+    </li>
+    
+    <li>
+        
+            <img class="pic_mark" src="img/img.gif" alt="1张图片" />
+        
+        <a class="title_link" href="/pe/msg/1/201453/" >
+
+            <h2 class="title">三星，汤姆胶卷相机各一部共100</h2>
+        </a>
+        <p>05-11 13:16&nbsp;北京-朝阳</p>
+        <span class="date"></span>
+        <span class="price"><b class='pri'>100元</b></span>
+    </li>
+    
+    <li>
+        
+            <img class="pic_mark" src="img/img.gif" alt="4张图片" />
+        
+        <a class="title_link" href="/pe/msg/1/201452/" >
+
+            <h2 class="title">九九成新SONY T700黑色</h2>
+        </a>
+        <p>05-11 13:16&nbsp;北京-西城</p>
+        <span class="date"></span>
+        <span class="price"><b class='pri'>900元</b></span>
+    </li>
+    
+    <li>
+        
+        <a class="title_link" href="/pe/msg/1/201451/" >
+
+            <h2 class="title">全新佳能EF75300转让</h2>
+        </a>
+        <p>05-11 13:08&nbsp;北京-顺义</p>
+        <span class="date"></span>
+        <span class="price"><b class='pri'>1100元</b></span>
+    </li>
+    
+    <li>
+        
+            <img class="pic_mark" src="img/img.gif" alt="1张图片" />
+        
+        <a class="title_link" href="/pe/msg/1/201450/" >
+
+            <h2 class="title">佳能EOS60d单反转让 北京当面交易 美国纯进口</h2>
+        </a>
+        <p>05-11 13:10&nbsp;北京-西城积水潭</p>
+        <span class="date"></span>
+        <span class="price"><b class='pri'>90新/8000元</b></span>
+    </li>
+    
+    <li>
+        
+        <a class="title_link" href="/pe/msg/1/201449/" >
+
+            <h2 class="title">九成新LX3 1500</h2>
+        </a>
+        <p>05-11 13:18&nbsp;北京-西城</p>
+        <span class="date"></span>
+        <span class="price"><b class='pri'>1500元</b></span>
+    </li>
+    
+    <li>
+        
+        <a class="title_link" href="/pe/msg/1/201447/" >
+
+            <h2 class="title">canon 50mm 1.4L 佳能</h2>
+        </a>
+        <p>05-11 13:16&nbsp;北京-宣武天宁寺</p>
+        <span class="date"></span>
+        <span class="price"><b class='pri'>99新/2300元</b></span>
+    </li>
+    
+    <li>
+        
+        <a class="title_link" href="/pe/msg/1/201446/" >
+
+            <h2 class="title">三星s600数码相机</h2>
+        </a>
+        <p>05-11 13:18&nbsp;北京-西城</p>
+        <span class="date"></span>
+        <span class="price"><b class='pri'>300元</b></span>
+    </li>
+    
+    <li>
+        
+        <a class="title_link" href="/pe/msg/1/201424/" >
+
+            <h2 class="title">转让leicax1相机</h2>
+        </a>
+        <p>05-11 12:59&nbsp;北京-通州</p>
+        <span class="date"></span>
+        <span class="price"><b class='pri'>9000元</b></span>
+    </li>
+    
+    <li>
+        
+        <a class="title_link" href="/pe/msg/1/201423/" >
+
+            <h2 class="title">八羽怪+ m42口 x-pro1 转接环</h2>
+        </a>
+        <p>05-11 12:52&nbsp;北京-朝阳</p>
+        <span class="date"></span>
+        <span class="price"><b class='pri'>80新/300元</b></span>
+    </li>
+    
+    <li>
+        
+        <a class="title_link" href="/pe/msg/1/201421/" >
+
+            <h2 class="title">卖佳能550D套照相机</h2>
+        </a>
+        <p>05-11 12:53&nbsp;北京-海淀</p>
+        <span class="date"></span>
+        <span class="price"><b class='pri'>2800元</b></span>
+    </li>
+    
+    <li>
+        
+        <a class="title_link" href="/pe/msg/1/201414/" >
+
+            <h2 class="title">出一个成色不错的ixus60 1g卡。一个松下莱卡广角FX100</h2>
+        </a>
+        <p>05-11 12:59&nbsp;北京</p>
+        <span class="date"></span>
+        <span class="price"><b class='pri'>80新/320元</b></span>
+    </li>
+    
+    <li>
+        
+        <a class="title_link" href="/pe/msg/1/201412/" >
+
+            <h2 class="title">SONY NEX微单镜头18-55和16F28</h2>
+        </a>
+        <p>05-11 13:04&nbsp;北京</p>
+        <span class="date"></span>
+        <span class="price"><b class='pri'>100新/1800元</b></span>
+    </li>
+    
+    <li>
+        
+            <img class="pic_mark" src="img/img.gif" alt="4张图片" />
+        
+        <a class="title_link" href="/pe/msg/1/201409/" >
+
+            <h2 class="title">出佳能EOS 50D单机</h2>
+        </a>
+        <p>05-11 13:04&nbsp;北京-宣武</p>
+        <span class="date"></span>
+        <span class="price"><b class='pri'>98新/4550元</b></span>
+    </li>
+    
+    <li>
+        
+            <img class="pic_mark" src="img/img.gif" alt="2张图片" />
+        
+        <a class="title_link" href="/pe/msg/1/201406/" >
+
+            <h2 class="title">尼康数码相机，1000万实际象素,欢迎当面交易</h2>
+        </a>
+        <p>05-11 12:39&nbsp;北京-海淀</p>
+        <span class="date"></span>
+        <span class="price"><b class='pri'>350元</b></span>
+    </li>
+    
+    <li>
+        
+            <img class="pic_mark" src="img/img.gif" alt="3张图片" />
+        
+        <a class="title_link" href="/pe/msg/1/201405/" >
+
+            <h2 class="title">佳能600D原装套机镜头EF-S 18-55mm</h2>
+        </a>
+        <p>05-11 12:41&nbsp;北京-朝阳</p>
+        <span class="date"></span>
+        <span class="price"><b class='pri'>550元</b></span>
+    </li>
+    
+    <li>
+        
+            <img class="pic_mark" src="img/img.gif" alt="6张图片" />
+        
+        <a class="title_link" href="/pe/msg/1/201404/" >
+
+            <h2 class="title">个人转佳能便携旗舰相机G12充新</h2>
+        </a>
+        <p>05-11 12:45&nbsp;北京-通州</p>
+        <span class="date"></span>
+        <span class="price"><b class='pri'>3200元</b></span>
+    </li>
+    
+
+</ul>
+<!-- /End循环 -->
+
+<div id="page_range">
+    <form method="get" name="page_navigator"  action="/pe/bj/">
+        <input type="hidden" name="keyword" id="keyword" value="请输入关键字">
+        <input type="hidden" name="city_id" id="city_id" value="1">
+        <input type="hidden" name="brand_id" id="brand_id" value="0">
+        <input type="hidden" name="min_price" id="min_price" value="0">
+        <input type="hidden" name="max_price" id="max_price" value="0">
+        <input type="hidden" name="page" id="page" value="1">
+
+        
+        
+
+        &lt;
+        
+
+        <span>
+            
+                
+                    <span class="current">1</span>
+                
+            
+                
+                    <a class="page_btn" href="#" title="第2页" onclick="set_page_navigator(2);return false;">2</a>
+                
+            
+                
+                    <a class="page_btn" href="#" title="第3页" onclick="set_page_navigator(3);return false;">3</a>
+                
+            
+                
+                    <a class="page_btn" href="#" title="第4页" onclick="set_page_navigator(4);return false;">4</a>
+                
+            
+                
+                    <a class="page_btn" href="#" title="第5页" onclick="set_page_navigator(5);return false;">5</a>
+                
+            
+            </span>
+        
+            <a href="#" onclick="set_page_navigator(2);return false;">下一页</a>
+        
+        &gt;
+        <br/>
+        <span>[第1/30页]</span>
+
+    </form>
+</div>
+<script type="text/javascript">
+  function set_page_navigator(p){
+      document.getElementById("page").value=p;
+      page_navigator.submit();
+  }
+</script>
+</div>
+</div>
+
+
+
+<!-- ft -->
+<footer id="ft">
+    <div class="login_info" id='login_info'></div>
+    <p class="ft_bar"></span><a href="/about.html">关于</a><span class="bar">|</span><a href="#" class="btn_gotop">回顶部</a></p>
+    <p class="copyright"><span><a href="http://push800.sinaapp.com">push800.sinaapp.com</a></span></p>
+</footer>
+<!-- //ft -->
+
+<!-- linezing analysis-->
+<script type="text/javascript" src="http://js.tongji.linezing.com/2861914/tongji.js"></script><noscript><a href="http://www.linezing.com"><img src="http://img.tongji.linezing.com/2861914/tongji.gif"/></a></noscript>
+</body>
+</html>

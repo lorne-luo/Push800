@@ -1,0 +1,91 @@
+*{
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+body {
+	font-family: Verdana, "Trebuchet MS", Tahoma, Arial;
+	font-size: 11px;
+	margin:10px;
+}
+.header {
+	background: #000;
+	cursor: pointer;
+	padding:4px;
+}
+
+.header:hover{
+	background-color:#666;
+}
+.selected{
+	background-color:#F00;
+	color:#FFF;
+}
+
+.content{
+	background:#FFF;
+	padding:4px;
+}
+
+
+
+#basic-accordian{
+	padding:5px;
+	position:absolute;
+	left:50%;
+	top:250px;
+	margin-left:-300px;
+	z-index:2;
+	margin-top:-100px;
+}
+.accordion_headings{
+	padding:5px;
+	background:#99CC00;
+	color:#FFFFFF;
+	border:1px solid #FFF;
+	cursor:pointer;
+	font-weight:bold;
+	font-size:1.5em;
+	height:20px;
+	font-family:Microsoft YaHei,sans-serif;
+}
+
+.accordion_headings:hover{
+	background:#00CCFF;
+}
+.menu_content{
+	display:none;
+}
+.accordion_child{
+	float:left;
+	padding:15px;
+	background:#EEE;;
+	font-size:16px;color:#4f6b21;font-weight:normal;font-family:Microsoft YaHei,sans-serif;
+}
+
+.header_highlight{
+	background:#00CCFF;
+}
+
+.tab_container *{
+	float:left;
+	width:100px;
+}
+#defaultpanel{
+	float:left;
+	padding:5px;
+	width:590px;
+	z-index:-999;
+	position:absolute;
+	left:50%;
+	top:250px;
+	margin-left:-295px;
+	margin-top:-65px;
+	height:310Px;
+}
+#banner{
+	background:#ddd;
+	width:590px;
+	height:100Px;
+	top:30px;
+}

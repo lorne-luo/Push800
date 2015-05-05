@@ -1,0 +1,105 @@
+<mockup version="1.0" skin="sketch" measuredW="417" measuredH="699" mockupW="333" mockupH="620">
+  <controls>
+    <control controlID="0" controlTypeID="com.balsamiq.mockups::iPhone" x="84" y="79" w="333" h="620" measuredW="282" measuredH="510" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bgPattern>allWhite</bgPattern>
+        <orientation>portrait</orientation>
+      </controlProperties>
+    </control>
+    <control controlID="10" controlTypeID="com.balsamiq.mockups::Label" x="124" y="271" w="-1" h="-1" measuredW="103" measuredH="25" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>work%20time%20from%3A</text>
+      </controlProperties>
+    </control>
+    <control controlID="23" controlTypeID="com.balsamiq.mockups::Button" x="272" y="492" w="-1" h="-1" measuredW="70" measuredH="32" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <href>P8PE_Submit%26bm%3BP8PE_Submit.bmml%26bm%3BP8PE_Submit.bmml%26bm%3BP8PE_Submit.bmml</href>
+        <icon>CheckMarkIcon%7Csmall</icon>
+        <map>%3Carea%20shape%3D%22rect%22%20coords%3D%22188%2C413%2C258%2C445%22%20href%3D%22P8PE_Submit.bmml%22%20alt%3D%22P8PE_Submit%22%20id%3D%2223%22/%3E</map>
+        <state>up</state>
+        <text>OK</text>
+        <underline>true</underline>
+      </controlProperties>
+    </control>
+    <control controlID="28" controlTypeID="com.balsamiq.mockups::Title" x="122" y="243" w="-1" h="-1" measuredW="73" measuredH="26" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>2848996</color>
+        <size>14</size>
+        <text>Hello%2CTom</text>
+      </controlProperties>
+    </control>
+    <control controlID="30" controlTypeID="com.balsamiq.mockups::Button" x="144" y="492" w="-1" h="-1" measuredW="80" measuredH="32" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <href>P8PE_Home%26bm%3BP8PE_Home.bmml%26bm%3BP8PE_Home.bmml%26bm%3BP8PE_Home.bmml</href>
+        <icon>JumpBackIcon%7Csmall</icon>
+        <map>%3Carea%20shape%3D%22rect%22%20coords%3D%2260%2C413%2C140%2C445%22%20href%3D%22P8PE_Home.bmml%22%20alt%3D%22P8PE_Home%22%20id%3D%2230%22/%3E</map>
+        <state>up</state>
+        <text>Back</text>
+        <underline>true</underline>
+      </controlProperties>
+    </control>
+    <control controlID="31" controlTypeID="com.balsamiq.mockups::Button" x="144" y="492" w="-1" h="-1" measuredW="97" measuredH="32" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <icon>ListIcon%7Csmall</icon>
+        <map>%3Carea%20shape%3D%22rect%22%20coords%3D%2260%2C413%2C140%2C445%22%20href%3D%22P8PE_Home.bmml%22%20alt%3D%22P8PE_Home%22%20id%3D%2231%22/%3E</map>
+        <state>up</state>
+        <text>Default</text>
+        <underline>true</underline>
+      </controlProperties>
+    </control>
+    <control controlID="32" controlTypeID="com.balsamiq.mockups::TextInput" x="247" y="269" w="50" h="-1" measuredW="43" measuredH="29" zOrder="6" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>16777215</color>
+        <text>8%3A00</text>
+      </controlProperties>
+    </control>
+    <control controlID="33" controlTypeID="com.balsamiq.mockups::Label" x="195" y="304" w="29" h="25" measuredW="24" measuredH="25" zOrder="7" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>to%3A</text>
+      </controlProperties>
+    </control>
+    <control controlID="34" controlTypeID="com.balsamiq.mockups::TextInput" x="247" y="301" w="-1" h="-1" measuredW="50" measuredH="29" zOrder="8" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>16777215</color>
+        <text>21%3A30</text>
+      </controlProperties>
+    </control>
+    <control controlID="35" controlTypeID="com.balsamiq.mockups::Button" x="317" y="269" w="-1" h="-1" measuredW="44" measuredH="28" zOrder="9" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>10066329</color>
+        <text>set</text>
+      </controlProperties>
+    </control>
+    <control controlID="36" controlTypeID="com.balsamiq.mockups::Button" x="317" y="302" w="-1" h="-1" measuredW="44" measuredH="28" zOrder="10" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>10066329</color>
+        <text>set</text>
+      </controlProperties>
+    </control>
+    <control controlID="37" controlTypeID="com.balsamiq.mockups::Label" x="124" y="344" w="103" h="25" measuredW="87" measuredH="25" zOrder="11" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>push%20method%3A</text>
+      </controlProperties>
+    </control>
+    <control controlID="38" controlTypeID="com.balsamiq.mockups::ComboBox" x="239" y="345" w="114" h="-1" measuredW="56" measuredH="72" zOrder="12" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>App%0Ae-mail%0ASMS</text>
+      </controlProperties>
+    </control>
+    <control controlID="39" controlTypeID="com.balsamiq.mockups::Label" x="124" y="459" w="248" h="25" measuredW="148" measuredH="25" zOrder="13" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>other%20settings%3A%20%20......</text>
+      </controlProperties>
+    </control>
+    <control controlID="40" controlTypeID="com.balsamiq.mockups::Label" x="124" y="434" w="69" h="25" measuredW="63" measuredH="25" zOrder="14" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Poll%20time%3A</text>
+      </controlProperties>
+    </control>
+    <control controlID="41" controlTypeID="com.balsamiq.mockups::ComboBox" x="239" y="433" w="118" h="-1" measuredW="59" measuredH="25" zOrder="15" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>5min</text>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>

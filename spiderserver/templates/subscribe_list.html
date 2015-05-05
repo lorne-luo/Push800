@@ -1,0 +1,86 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="keywords" content="二手,相机,照相机,摄影,摄影器材,跳蚤,单反,镜头"/>
+    <title>{{ city.name_cn }}二手摄影器材</title>
+    <meta name="description" content="{{ msg.title }}" />
+    <meta id="viewport" name="viewport" content="width=device-width; initial-scale=1.0; minimum-scale=1.0; maximum-scale=2.0"/>
+
+    <link href="/css/styles.css" media="screen" rel="stylesheet" type="text/css" />
+
+    <!-- google analysis-->
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-31472587-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+</head>
+<body>
+{% block content %}
+<! -- <table cellspacing="1" border="1" cellpadding="4" width="480" style="font-size:12px">-->
+<div class="grid-view">
+<table class="items" width="100%">
+ 
+	<tr>
+		<th>开始时间</th>
+		<th>订阅城市</th>
+		<th>订阅关键字</th>
+		<th>收到消息数</th>
+		<th>停止订阅任务</th>
+	</tr>
+	
+	{% for sub in sub_list %}
+		{% if not sub.is_finished %}
+    <tr class="odd">
+		<td>{{ sub.created_at }}</td>
+		<td>{{ sub.city_name }}</td>
+		<td><a href="#">{{ sub.keyword }}</a></td>
+		<td><a href="#">{{ sub.notify_count }}</a></td>
+		<td><a href="#">停止任务</a></td>
+	</tr>
+		{% endif %}
+    {% endfor %}
+    
+	<tr>
+		<td colspan="6"><center><a href="#">查看更多</a></center></td>
+	</tr>
+</table>
+</div>
+</br>
+</br>
+<div  class="grid-view">
+<table class="items" width="100%">
+	<tr>
+		<th>开始时间</th>
+		<th>订阅城市</th>
+		<th>订阅关键字</th>
+		<th>收到消息数</th>
+		<th>停止时间</th>
+	</tr>
+	
+	{% for sub in sub_list %}
+		{% if sub.is_finished %}
+    <tr  class="odd">
+		<td>{{ sub.created_at }}</td>
+		<td>{{ sub.city_name }}</td>
+		<td><a href="#">{{ sub.keyword }}</a></td>
+		<td><a href="#">{{ sub.notify_count }}</a></td>
+		<td><a href="#">{{ sub.close_time }}</a></td>
+	</tr>
+		{% endif %}
+    {% endfor %}
+    
+	<tr>
+		<td colspan="6"><center><a href="#">查看更多</a></center></td>
+	</tr>
+</table>
+</div>
+{% endblock %}
+</body>
+</html>

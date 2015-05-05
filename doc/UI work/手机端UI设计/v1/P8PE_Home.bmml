@@ -1,0 +1,86 @@
+<mockup version="1.0" skin="sketch" measuredW="417" measuredH="699" mockupW="333" mockupH="620">
+  <controls>
+    <control controlID="0" controlTypeID="com.balsamiq.mockups::iPhone" x="84" y="79" w="333" h="620" measuredW="282" measuredH="510" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bgPattern>topBlackBottom</bgPattern>
+        <orientation>portrait</orientation>
+      </controlProperties>
+    </control>
+    <control controlID="6" controlTypeID="com.balsamiq.mockups::Title" x="112" y="249" w="270" h="-1" measuredW="212" measuredH="34" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <align>right</align>
+        <bold>false</bold>
+        <color>40463</color>
+        <italic>true</italic>
+        <size>20</size>
+        <text>Photograph%20Equipment%20</text>
+        <underline>false</underline>
+      </controlProperties>
+    </control>
+    <control controlID="11" controlTypeID="__group__" x="118" y="198" w="263" h="62" measuredW="263" measuredH="62" zOrder="1" locked="false" isInGroup="-1">
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::Title" x="0" y="0" w="263" h="-1" measuredW="252" measuredH="62" zOrder="0" locked="false" isInGroup="11">
+          <controlProperties>
+            <align>left</align>
+            <italic>true</italic>
+            <text>Push%20800%20...</text>
+          </controlProperties>
+        </control>
+      </groupChildrenDescriptors>
+    </control>
+    <control controlID="25" controlTypeID="com.balsamiq.mockups::Title" x="118" y="538" w="264" h="-1" measuredW="228" measuredH="51" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>32</size>
+        <text>Advertisement</text>
+      </controlProperties>
+    </control>
+    <control controlID="28" controlTypeID="com.balsamiq.mockups::Title" x="122" y="285" w="-1" h="-1" measuredW="73" measuredH="26" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>2848996</color>
+        <size>14</size>
+        <text>Hello%2CTom</text>
+      </controlProperties>
+    </control>
+    <control controlID="31" controlTypeID="com.balsamiq.mockups::Button" x="169" y="315" w="173" h="31" measuredW="112" measuredH="32" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>16777215</color>
+        <href>P8PE_Submit%26bm%3BP8PE_Submit.bmml%26bm%3BP8PE_Submit.bmml%26bm%3BP8PE_Submit.bmml</href>
+        <icon>SearchIcon%7Csmall</icon>
+        <map>%3Carea%20shape%3D%22rect%22%20coords%3D%2285%2C236%2C258%2C267%22%20href%3D%22P8PE_Submit.bmml%22%20alt%3D%22P8PE_Submit%22%20id%3D%2231%22/%3E</map>
+        <text>I%20want...</text>
+      </controlProperties>
+    </control>
+    <control controlID="32" controlTypeID="com.balsamiq.mockups::Button" x="169" y="360" w="173" h="31" measuredW="111" measuredH="32" zOrder="6" locked="false" isInGroup="-1">
+      <controlProperties>
+        <href>P8PE_Task%26bm%3BP8PE_Task.bmml%26bm%3BP8PE_Task.bmml%26bm%3BP8PE_Task.bmml</href>
+        <icon>NumberedListIcon%7Csmall</icon>
+        <map>%3Carea%20shape%3D%22rect%22%20coords%3D%2285%2C281%2C258%2C312%22%20href%3D%22P8PE_Task.bmml%22%20alt%3D%22P8PE_Task%22%20id%3D%2232%22/%3E</map>
+        <text>My%20Tasks</text>
+      </controlProperties>
+    </control>
+    <control controlID="33" controlTypeID="com.balsamiq.mockups::Button" x="169" y="406" w="173" h="31" measuredW="158" measuredH="32" zOrder="7" locked="false" isInGroup="-1">
+      <controlProperties>
+        <href>P8PE_Msg%26bm%3BP8PE_Msg.bmml%26bm%3BP8PE_Msg.bmml%26bm%3BP8PE_Msg.bmml</href>
+        <icon>StarIcon%7Csmall</icon>
+        <map>%3Carea%20shape%3D%22rect%22%20coords%3D%2285%2C327%2C258%2C358%22%20href%3D%22P8PE_Msg.bmml%22%20alt%3D%22P8PE_Msg%22%20id%3D%2233%22/%3E</map>
+        <text>My%20Messages%20%283%29</text>
+      </controlProperties>
+    </control>
+    <control controlID="34" controlTypeID="com.balsamiq.mockups::Button" x="169" y="452" w="173" h="31" measuredW="128" measuredH="32" zOrder="8" locked="false" isInGroup="-1">
+      <controlProperties>
+        <href>P8PE_Setting%26bm%3BP8PE_Setting.bmml%26bm%3BP8PE_Setting.bmml%26bm%3BP8PE_Setting.bmml</href>
+        <icon>GearIcon%7Csmall</icon>
+        <map>%3Carea%20shape%3D%22rect%22%20coords%3D%2285%2C373%2C258%2C404%22%20href%3D%22P8PE_Setting.bmml%22%20alt%3D%22P8PE_Setting%22%20id%3D%2234%22/%3E</map>
+        <text>My%20Settings</text>
+      </controlProperties>
+    </control>
+    <control controlID="35" controlTypeID="com.balsamiq.mockups::Button" x="169" y="496" w="173" h="31" measuredW="91" measuredH="32" zOrder="9" locked="false" isInGroup="-1">
+      <controlProperties>
+        <href>P8PE_Login%26bm%3BP8PE_Login.bmml%26bm%3BP8PE_Login.bmml%26bm%3BP8PE_Login.bmml</href>
+        <icon>PowerIcon%7Csmall</icon>
+        <map>%3Carea%20shape%3D%22rect%22%20coords%3D%2285%2C417%2C258%2C448%22%20href%3D%22P8PE_Login.bmml%22%20alt%3D%22P8PE_Login%22%20id%3D%2235%22/%3E</map>
+        <text>Logout</text>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>

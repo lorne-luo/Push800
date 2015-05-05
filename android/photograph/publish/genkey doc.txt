@@ -1,0 +1,6 @@
+keytool -genkey -v -keystore push800.keystore -alias push800 -keyalg RSA -validity 20000
+123456
+123456
+生成unsign文件
+jarsigner -verbose -keystore push800.keystore -signedjar P8PE_signed.apk P8PE.apk push800
+c:\android-sdk-windows\tools\zipalign -v 4 P8PE.apk 2.apk

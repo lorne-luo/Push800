@@ -1,0 +1,29 @@
+{% block content %}
+<table cellspacing="1" border="1" cellpadding="4" width="480" style="font-size:12px">
+	<tr>
+		<th>开始时间</th>
+		<th>类别</th>
+		<th>订阅城市</th>
+		<th>订阅关键字</th>
+		<th>收到消息数</th>
+		<th>停止订阅任务</th>
+	</tr>
+	
+	{% for sub in sub_list %}
+		{% if not sub.is_finished %}
+    <tr>
+		<td>{{ sub.created_at }}</td>
+		<td>二手摄影器材</td>
+		<td>{{ sub.city_name }}</td>
+		<td><a href="#">{{ sub.keyword }}</a></td>
+		<td><a href="#">{{ sub.notify_count }}</a></td>
+		<td><a href="#">停止任务</a></td>
+	</tr>
+		{% endif %}
+    {% endfor %}
+    
+	<tr>
+		<td colspan="6"><center><a href="#">查看更多</a></center></td>
+	</tr>
+</table>
+{% endblock %}

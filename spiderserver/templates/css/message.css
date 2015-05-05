@@ -1,0 +1,8 @@
+@charset "utf-8";
+div,dl,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,p,blockquote,th,img,a,form{margin:0; padding:0;}
+body{margin:5px 0 0 0;}
+.msg_content{font-size:14px;}
+#msg_title{text-align:center;font-weight:bold;font-size:16px;}
+#msg_contact{text-align:center;}
+.bold{font-weight:bold;}
+.func_btn{font-weight:bold;font-size:16px;}

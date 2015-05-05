@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, LoginActivity!</string>
+    <string name="app_name">二手摄影器材</string>
+    <!-- 我们一个手机app只对应一个business_id，所以此app对应的business_id要当作常量记录在app里 -->
+    <string name="business_id">1</string>
+    <string name="text_welcome_login">\n欢迎使用,请登录 : )\n</string>
+    <string name="text_login_id">ID/邮箱:</string>
+    <string name="text_login_pw">密码:</string>
+    <string name="text_login_pw_hint">请输入密码</string>
+    <string name="text_login_id_hint">请输入ID或邮箱</string>
+    <string name="text_login_register">注册</string>
+    <string name="text_login_login">登录</string>
+    <string name="text_login_remember">记住密码</string>
+    <string name="blank_line">\n</string>
+    <string name="blank_line_2">\n\n</string>
+    
+    <string name="text_regist_welcome">请用您的电子邮箱注册， *为必填内容</string>
+    <string name="text_regist_emeil">注册邮箱:</string>
+    <string name="text_regist_username">用户名:</string>
+    <string name="text_regist_tel">手机号码:</string>
+    <string name="text_regist_city">所在城市:</string>
+    <string name="text_regist_pw">输入密码:</string>
+    <string name="text_regist_pw2">确认密码:</string>
+    <string name="text_regist_regist">注册</string>
+    <string name="text_regist_back">返回</string>
+    <string name="hint_regist_email">注册用的邮箱</string>
+    <string name="hint_regist_pw">登录此应用的密码</string>
+    <string name="hint_regist_pw2">再次输入密码以确认</string>
+    <string name="hint_regist_username">此应用的用户名</string>
+    <string name="hint_regist_tel">接收推送的手机号</string>
+    
+    <string name="submit_welcome">\n请填写你想订阅的二手器材信息，\n</string>
+    <string name="submit_brand">品牌:</string>
+    <string name="submit_city">城市:</string>
+    <string name="submit_price">价格:</string>
+    <string name="submit_price_between">~</string>
+    <string name="submit_keyword">关键词:</string>
+    <string name="submit_submit">提交</string>
+    
+	<string name="search_title">搜索</string>
+    
+    <string name="bottom_msg">消息</string>
+    <string name="bottom_submit">订阅</string>
+    <string name="bottom_task">任务</string>
+    
+    <string name="msg_welcom">\n您好，\n</string>
+    <string name="msg_back">返回</string>
+    <string name="msg_refresh">刷新</string>
+    
+    <string name="task_welcom">\n您好，\n</string>
+    <string name="task_back">返回</string>
+    <string name="task_refresh">刷新</string>
+
+    <string name="setting_welcom">\n您好，\n</string>
+    <string name="setting_from">推送时间：从</string>
+    <string name="setting_to">到</string>
+    <string name="setting_push_method">推送方式：</string>
+    <string name="setting_poll_time">刷新间隔：</string>
+    <string name="setting_default">默认</string>
+    <string name="setting_OK">确定</string>
+    
+    
+    <string name="menu_exit">退出</string>
+    <string name="menu_useage">说明</string>
+    <string name="menu_selcity">切换城市</string>
+    <string name="menu_about">关于</string>
+    <string name="menu_menu">菜单</string>
+    <string name="menu_goback">后退</string>
+    <string name="menu_goforward">前进</string>
+    
+    <string name="title_about">二手摄影器材1.0</string>
+	<string name="about_tips">助您获取最新最全的二手摄影器材信息，后续将推出新信息邮件提醒功能。有任何建议欢迎提交反馈。</string>
+	<string name="app_ISee">关闭</string>
+	<string name="data_loading">获取数据…</string>
+	
+	<string-array name="mathod_list">
+	    <item>手机app</item>
+	    <item>电子邮件</item>
+	    <item>手机短信</item>
+	</string-array>
+	
+	<string-array name="polltime_list">
+	    <item>10分钟</item>
+	    <item>30分钟</item>
+	    <item>1小时</item>
+	    <item>2小时</item>
+	    <item>4小时</item>
+	    <item>8小时</item>
+	</string-array>
+	
+	<!-- 包含"不限"，共15个 
+	<string-array name="price_list">
+	    <item>不限</item>
+	    <item>0~100</item>
+	    <item>100~300</item>
+	    <item>300~500</item>
+	    <item>500~800</item>
+	    <item>800~1000</item>
+	    <item>1000~1500</item>
+	    <item>1500~2000</item>
+	    <item>2000~2500</item>
+	    <item>2500~3000</item>
+	    <item>3000~3500</item>
+	    <item>3500~4000</item>
+	    <item>4000~4500</item>
+	    <item>4500~5000</item>
+	    <item>5000以上</item>
+	</string-array>
+	-->
+	    
+</resources>

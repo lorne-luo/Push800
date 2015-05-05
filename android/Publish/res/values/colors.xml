@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background">#ff000000</color>
+    <color name="green">#ff31ff00</color>
+    <color name="red">#ffe20002</color>
+    <color name="black">#ff000000</color>
+    <color name="white">#ffffffff</color>
+    <color name="transparent">#00000000</color>
+    <color name="long_blue">#ff00ffff</color>
+    <color name="short_yellow">#ffffff00</color>
+    <color name="highlight_grey">#ff969696</color>
+    <color name="grey">#ff3a3a3a</color>
+    <color name="tp_green">#ff91b700</color>
+    <color name="sl_red">#ffde0000</color>
+    <color name="ta_yellow">#ffffd022</color>
+    <color name="row_background">#ff000000</color>
+    <color name="text">#ffffffff</color>
+    <color name="row_text">#ffffffff</color>
+    <color name="header_text">#ffffffff</color>
+    
+	<color name="vpi_background_selected">#ffffffff</color>
+    <color name="vpi_background_unselected">#ff999999</color>
+    <color name="notice_bg">#88000000</color>
+</resources>

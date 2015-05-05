@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        style="@style/Style_1"
+        android:text="@string/task_welcom" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+        
+        <!-- WebView -->         
+        <WebView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="2"
+            android:id="@+id/wv_task"/>"
+        
+        <!-- 按钮和广告 -->
+        <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_weight="3"
+	        android:orientation="vertical">
+	        
+
+	        
+	        <!-- 按钮 -->
+            <LinearLayout
+		        android:layout_width="fill_parent"
+		        android:layout_height="fill_parent"
+		        android:layout_weight="1"
+		        android:gravity="center_vertical"
+		        android:orientation="horizontal">
+		        
+				<TextView
+				    android:layout_width="wrap_content"
+		        	android:layout_height="fill_parent"
+		        	android:layout_weight="1"/>
+               
+				<Button
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:layout_weight="1"
+				    android:text="@string/task_back"/>
+				
+				<Button
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:layout_weight="1"
+				    android:text="@string/task_refresh"/>"
+               
+				<TextView
+					android:layout_width="wrap_content"
+		        	android:layout_height="fill_parent"
+		        	android:layout_weight="1"/>
+		        
+            </LinearLayout>
+
+			
+            <!-- 广告 --> 
+            <ImageView
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:layout_weight="1"
+              android:src="@drawable/bg_topbar"
+              android:scaleType="fitCenter"/>
+	        
+        </LinearLayout>
+        
+    </LinearLayout>
+
+</LinearLayout>

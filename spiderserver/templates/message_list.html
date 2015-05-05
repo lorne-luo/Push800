@@ -1,0 +1,25 @@
+{% block content %}
+<table cellspacing="1" border="1" cellpadding="4" width="480" style="font-size:12px">
+	<tr>
+		<th>发布时间</th>
+		<!-- <th>类别（隐藏）</th> -->
+		<th>城市</th>
+		<th>信息标题</th>
+		<th>成色/价格</th>
+	</tr>
+	
+	{% for msg in msg_list %}
+    <tr>
+		<td><a href="{{ msg.url }}">{{ msg.publish_time }}</a></td>
+		<!-- <td><a href="{{ msg.url }}">二手摄影器材</a></td> -->
+		<td><a href="{{ msg.url }}">{{ msg.city }}|{{ msg.district }}</a></td>
+		<td><a href="{{ msg.url }}">{{ msg.title }}</a></td>
+		<td><a href="{{ msg.url }}">{{ msg.quality }}新/{{ msg.price }}</a></td>
+	</tr>
+    {% endfor %}
+    
+	<tr>
+		<td colspan="6"><center><a href="#">查看更多</a></center></td>
+	</tr>
+</table>
+{% endblock %}

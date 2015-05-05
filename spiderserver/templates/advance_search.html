@@ -1,0 +1,65 @@
+{% block content %}
+<form id="search_form" name="search_form" action="/pe/{{ city.name_ab }}/" method="get">
+    <table>
+        <tr>
+            <td>城市</td>
+            <td>
+                <select name="city_id" id="city_id" size="1">
+                    {% for c in city_list %}
+                        <option value="{{ c.id }}" {% ifequal c.id city.id %} selected="1"{% endifequal %}>{{ c.name_cn }}</option>
+                    {% endfor %}
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>城区</td>
+            <td>
+                <select name="district_id" id="district_id" size="1">
+                    {% for district in district_list %}
+                        <option value="{{ district.id }}">{{ district.name_cn }}</option>
+                    {% endfor %}
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>品牌</td>
+            <td>
+                <select name="brand_id" id="brand_id" size="1">
+                    <option value="0">不限</option>
+                    {% for brand in brand_list %}
+                        <option value="{{ brand.id }}" {% ifequal brand.id brand_id %} selected="1"{% endifequal %}>{{ brand.name_cn }}</option>
+                    {% endfor %}
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>关键字</td>
+            <td>
+                <input type="text" size="20" name="keyword" id="keyword" value="{{ keyword }}" onfocus="if (this.value=='请输入关键字') this.value='';" >
+            </td>
+        </tr>
+        <tr>
+            <td>价格</td>
+            <td>
+                <input type="text" size="6" name="min_price" id="min_price" value="{% ifnotequal min_price 0 %}{{ min_price }}{% endifnotequal %}">-
+                <input type="text" size="6" name="max_price" id="max_price" value="{% ifnotequal max_price 0 %}{{ max_price }}{% endifnotequal %}">
+            </td>
+        </tr>
+        <tr>
+            <td>成色</td>
+            <td>
+                <select name="quility" id="quility" size="1">
+                    <option value="95" >95新</option>
+                    <option value="90" >90新</option>
+                    <option value="8" >80新</option>
+                </select>
+            </td>
+        </tr>
+    </table>
+    <div>
+        <input type="hidden" name="phone_number" id="phone_number" value="{{ phone_number }}" >
+        <input type="hidden" name="phone_ime" id="phone_ime" value="{{ phone_ime }}" >
+        <a id="subscribe" href="#" onclick="search_form.submit();">搜索</a>
+    </div>
+</form>
+{% endblock %}

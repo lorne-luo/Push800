@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="brand_list">
+	    <item>不限</item>
+	    <item>佳能</item>
+	    <item>尼康</item>
+	    <item>索尼</item>
+	    <item>宾得</item>
+	    <item>富士</item>
+	    <item>奥林巴斯</item>
+	    <item>松下</item>
+	    <item>理光</item>
+	    <item>适马</item>
+	    <item>腾龙</item>
+	    <item>图丽</item>
+	    <item>美能达</item>
+	    <item>哈苏</item>
+	    <item>蔡司</item>
+	    <item>徕卡</item>
+	    <item>柯达</item>
+	    <item>禄来</item>
+	    <item>卡西欧</item>
+	    <item>康泰时</item>
+	    <item>爱普生</item>
+	    <item>惠普</item>
+	    <item>玛米亚</item>
+	    <item>柯尼卡</item>
+	    <item>三洋</item>
+	    <item>雅西卡</item>
+	    <item>其他品牌</item>
+	    <item>三脚架</item>
+	    <item>摄影包</item>
+	    <item>其它配件</item>
+	</string-array>
+    
+</resources>

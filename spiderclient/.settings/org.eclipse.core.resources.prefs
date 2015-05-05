@@ -1,0 +1,23 @@
+#Sun Nov 20 10:26:28 CST 2011
+eclipse.preferences.version=1
+encoding//business/business.py=utf-8
+encoding//core/module_manager.py=utf-8
+encoding//core/scheduler.py=utf-8
+encoding//core/spider.py=utf-8
+encoding//core/spiderthread.py=utf-8
+encoding//core/task_manager.py=utf-8
+encoding//core/threadpool.py=utf-8
+encoding//settings/default_settings.py=utf-8
+encoding//spiders/Photograph_Fengniao_All_Detail.py=utf-8
+encoding//spiders/Photograph_Fengniao_All_List.py=utf-8
+encoding//spiders/parser_template.py=utf-8
+encoding//spiders/photograph_58_detail.py=utf-8
+encoding//spiders/photograph_58_list.py=utf-8
+encoding//spiders/photograph_fengniao_detail.py=utf-8
+encoding//spiders/photograph_fengniao_detail_byid.py=utf-8
+encoding//spiders/photograph_fengniao_list.py=utf-8
+encoding//spiders/photograph_ganji_detail.py=utf-8
+encoding//spiders/photograph_ganji_list.py=utf-8
+encoding//utils/log.py=utf-8
+encoding/run.py=utf-8
+encoding/setting.py=utf-8

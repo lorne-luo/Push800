@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="push800.photograph"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="5" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+
+    <!-- android:theme="@android:style/Theme.Black.NoTitleBar" -->
+    <application
+        android:icon="@drawable/icon"
+        android:label="@string/app_name" >
+        <activity
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name"
+            android:name=".launcher.LauncherUI" >
+            <intent-filter >
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".launcher.WelcomeUI" >
+        </activity>
+        <activity android:name=".launcher.TestUI" >
+        </activity>
+        <activity android:name=".launcher.TestUI2" >
+        </activity>
+        <activity
+            android:label="请选择您所在的城市"
+            android:name=".launcher.SelectCityUI" >
+        </activity>
+        <activity
+            android:label="@string/app_name"
+            android:name=".main.MainUI_Single"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:name="net.youmi.android.AdActivity" />
+        <activity
+            android:label="@string/app_name"
+            android:name=".main.BrowserUI" >
+        </activity>
+        <activity
+            android:label="@string/text_login_login"
+            android:name=".login.LoginActivity"
+            android:theme="@style/Theme.CustomDialog" >
+        </activity>
+        <activity
+            android:label="@string/text_regist_regist"
+            android:name=".login.RegisterActivity"
+            android:theme="@style/Theme.CustomDialog" >
+        </activity>
+        <activity
+            android:label="@string/app_name"
+            android:name=".subscribe.UserCenterActivity" >
+        </activity>
+        <activity
+            android:label="@string/app_name"
+            android:name=".subscribe.SubmitActivity" >
+        </activity>
+        <activity
+            android:label="@string/search_title"
+            android:name=".subscribe.SearchActivity"
+            android:theme="@style/Theme.CustomDialog" >
+        </activity>
+        <activity
+            android:label="@string/app_name"
+            android:name=".main.MsgActivity" >
+        </activity>
+        <activity
+            android:label="@string/app_name"
+            android:name=".subscribe.TaskActivity" >
+        </activity>
+        <activity
+            android:label="@string/app_name"
+            android:name=".subscribe.SettingActivity" >
+        </activity>
+        <activity
+            android:name="com.feedback.ui.SendFeedback"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.feedback.ui.FeedbackConversations" />
+        <activity
+            android:configChanges="keyboard"
+            android:name="com.feedback.ui.FeedbackConversation" />
+
+        <!-- http://wiki.youmi.net/Wiki/PromotionChannelIDs -->
+        <meta-data
+            android:name="YOUMI_CHANNEL"
+            android:value="10310" />
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="4f73f7765270154f8b000008" />
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="摩托罗拉智件园" />
+    </application>
+
+</manifest>
